@@ -274,13 +274,16 @@ int effects[] = {
 
 
 
+int teste_array[64][3];
+
+
 int effect_counter = 0;
 int effect_time = 0;
 
 
 void setup() {
   
-  Serial.begin(9600);
+  //Serial.begin(9600);
   
   
   task_control[0] = 4;
@@ -370,7 +373,21 @@ void cube_driver() {
   byte comp = B10000000;
   byte counter = 0;
 
+
   layer_select(0x00);
+
+
+  //TODO: Mudar o driver
+  /*
+  for (int idx = 0; idx < 64; idx++) {
+    if(cube_value[idx] == true) {
+      write_data_byte(counter);
+    } else {
+      mux_select(0x00);
+      layer_select(0x00);
+    }
+  }
+  */
 
   if(cube_value[0]) {
     while(true) {
