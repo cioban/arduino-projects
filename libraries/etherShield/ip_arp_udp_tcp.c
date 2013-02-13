@@ -441,7 +441,7 @@ void init_len_info(uint8_t *buf)
 // fill in tcp data at position pos. pos=0 means start of
 // tcp data. Returns the position at which the string after
 // this string could be filled.
-uint16_t fill_tcp_data_p(uint8_t *buf,uint16_t pos, const prog_char *progmem_s)
+uint16_t fill_tcp_data_p(uint8_t *buf,uint16_t pos, const char PROGMEM *progmem_s)
 {
         char c;
         // fill in tcp data at position pos

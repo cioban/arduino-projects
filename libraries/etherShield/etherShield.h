@@ -31,7 +31,7 @@ class EtherShield
   public:
   
   	EtherShield();
-	  uint16_t ES_fill_tcp_data_p(uint8_t *buf,uint16_t pos, const prog_char *progmem_s);
+	  uint16_t ES_fill_tcp_data_p(uint8_t *buf,uint16_t pos, const char PROGMEM *progmem_s);
 	  uint16_t ES_fill_tcp_data(uint8_t *buf,uint16_t pos, const char *s);
 		void ES_enc28j60Init(uint8_t* macaddr);
 		void ES_enc28j60clkout(uint8_t clk);

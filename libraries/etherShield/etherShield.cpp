@@ -3,7 +3,6 @@
 extern "C" {
 	#include "enc28j60.h"
 	#include "ip_arp_udp_tcp.h"
- 
 }
 #include "etherShield.h"
 
@@ -11,7 +10,7 @@ extern "C" {
 EtherShield::EtherShield(){
 }
 
-uint16_t EtherShield::ES_fill_tcp_data_p(uint8_t *buf,uint16_t pos, const prog_char *progmem_s){
+uint16_t EtherShield::ES_fill_tcp_data_p(uint8_t *buf,uint16_t pos, const char PROGMEM *progmem_s){
 	return fill_tcp_data_p(buf, pos, progmem_s);
 }
 

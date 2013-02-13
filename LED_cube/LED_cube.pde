@@ -38,9 +38,6 @@ int layer[]	= {14, 15, 16, 17};
 
 byte cube_value[] = { B00000000, B00000000, B0000 };
 
-// TESTE
-//byte cube_value[] = { B11111001, B10011111, B1000 };
-
 
 // Efeitos
 int effects[] = {

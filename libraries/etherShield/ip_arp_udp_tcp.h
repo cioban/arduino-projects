@@ -29,7 +29,7 @@ extern void make_udp_reply_from_request(uint8_t *buf,char *data,uint8_t datalen,
 extern void make_tcp_synack_from_syn(uint8_t *buf);
 extern void init_len_info(uint8_t *buf);
 extern uint16_t get_tcp_data_pointer(void);
-extern uint16_t fill_tcp_data_p(uint8_t *buf,uint16_t pos, const prog_char *progmem_s);
+extern uint16_t fill_tcp_data_p(uint8_t *buf,uint16_t pos, const char PROGMEM *progmem_s);
 extern uint16_t fill_tcp_data(uint8_t *buf,uint16_t pos, const char *s);
 extern void make_tcp_ack_from_any(uint8_t *buf);
 extern void make_tcp_ack_with_data(uint8_t *buf,uint16_t dlen);
